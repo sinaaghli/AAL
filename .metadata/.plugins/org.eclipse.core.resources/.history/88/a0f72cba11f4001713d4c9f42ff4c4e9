@@ -1,0 +1,23 @@
+#include <AAL/HallEncoder.h>
+
+template <class PIN, class PORT>
+HallEncoder<PIN,PORT>::HallEncoder(PORT H0_GPIO_PORT, PIN H0_GPIO_PIN,
+		PORT H1_GPIO_PORT, PIN H1_GPIO_PIN,
+		PORT H2_GPIO_PORT, PIN H2_GPIO_PIN) {
+
+}
+
+template <class PIN, class PORT>
+HallEncoder<PIN,PORT>::~HallEncoder() {
+
+}
+
+template <class PIN, class PORT>
+int HallEncoder<PIN,PORT>::somethingstupid(int in) {
+	return in;
+}
+
+template <class PIN, class PORT>
+void HallEncoder<PIN,PORT>::dummy(int a) {
+
+}

@@ -1,0 +1,5 @@
+#ifdef STM32F407
+	#include "stm32f407xx.h"
+#else
+	#error Supported chip has not been defined for AAL library.
+#endif

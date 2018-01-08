@@ -1,0 +1,4 @@
+#include <stdint.h>
+
+#define PORT GPIO_TypeDef*
+#define PIN  uint16_t

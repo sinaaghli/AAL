@@ -1,0 +1,20 @@
+#ifndef HALL_ENCODER_HPP__
+#define HALL_ENCODER_HPP__
+
+#include "AAL.h"
+
+template
+class HallEncoder
+{
+
+public:
+	HallEncoder(PORT H0_GPIO_PORT, PIN H0_GPIO_PIN);
+	~HallEncoder();
+	int somethingstupid(int in);
+	void dummy(int a);
+
+private:
+	unsigned long int tick_count;
+};
+
+#endif // HALL_ENCODER_H__

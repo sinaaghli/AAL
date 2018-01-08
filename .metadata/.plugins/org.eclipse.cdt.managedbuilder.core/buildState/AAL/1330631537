@@ -1,0 +1,7 @@
+#
+#Sun Jan 07 20:57:04 MST 2018
+Release/src/HallEncoder.o=1
+inc/AAL/HallEncoder.h=1
+src/HallEncoder.cpp=1
+inc/AAL/AAL.h=1
+Release/libAAL.a=1
