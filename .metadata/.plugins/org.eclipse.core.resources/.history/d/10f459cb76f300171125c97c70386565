@@ -1,9 +1,0 @@
-#include "hall_encoder.h"
-
-hall_encoder::hall_encoder(uint16_t H0_GPIO_PIN,uint16_t H1_GPIO_PIN,uint16_t H2_GPIO_PIN) {
-
-}
-
-hall_encoder::~hall_encoder() {
-
-}

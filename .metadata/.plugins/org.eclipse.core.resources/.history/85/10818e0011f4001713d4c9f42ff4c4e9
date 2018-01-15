@@ -1,9 +1,0 @@
-#include <stdint.h>
-
-
-class AAL {
-public:
-	AAL();
-	~AAL();
-
-};

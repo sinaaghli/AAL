@@ -1,9 +1,0 @@
-#include <stdint.h>
-
-template <class PIN, class PORT, class TIMER>
-class AAL {
-public:
-	AAL();
-	~AAL();
-
-};
