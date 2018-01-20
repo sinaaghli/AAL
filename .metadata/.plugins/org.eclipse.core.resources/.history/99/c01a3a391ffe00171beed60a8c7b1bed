@@ -28,7 +28,7 @@ private:
 //////////////////////////////////////////////////////////
 
 template <class PORT, class PIN, class TIMER>
-HallEncoder<PORT,PIN,TIMER>::HallEncoder(PORT H0_GPIO_PORT, PIN H0_GPIO_PIN,
+HallEncoder<PORT,PIN>::HallEncoder(PORT H0_GPIO_PORT, PIN H0_GPIO_PIN,
 								   PORT H1_GPIO_PORT, PIN H1_GPIO_PIN,
 								   PORT H2_GPIO_PORT, PIN H2_GPIO_PIN,
 								   TIMER PWM_TIMER ) {
@@ -42,18 +42,18 @@ HallEncoder<PORT,PIN,TIMER>::HallEncoder(PORT H0_GPIO_PORT, PIN H0_GPIO_PIN,
 }
 
 template <class PORT, class PIN, class TIMER>
-HallEncoder<PORT,PIN,TIMER>::~HallEncoder() {
+HallEncoder<PORT,PIN>::~HallEncoder() {
 }
 
 template <class PORT, class PIN, class TIMER>
-uint8_t HallEncoder<PORT,PIN,TIMER>::GetHallState(int in) {
+uint8_t HallEncoder<PORT,PIN>::GetHallState(int in) {
 	uint8_t hall_state = 0;
 
 	return in;
 }
 
 template <class PORT, class PIN, class TIMER>
-void HallEncoder<PORT,PIN,TIMER>::dummy(int a) {
+void HallEncoder<PORT,PIN>::dummy(int a) {
 
 }
 

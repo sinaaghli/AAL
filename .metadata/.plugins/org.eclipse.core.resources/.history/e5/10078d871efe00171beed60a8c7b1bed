@@ -3,13 +3,12 @@
 
 #include "AAL.h"
 
-template <class PORT, class PIN, class TIMER>
+template <class PORT, class PIN>
 class HallEncoder {
 public:
 	HallEncoder(PORT H0_GPIO_PORT, PIN H0_GPIO_PIN,
 				PORT H1_GPIO_PORT, PIN H1_GPIO_PIN,
-				PORT H2_GPIO_PORT, PIN H2_GPIO_PIN,
-				TIMER PWM_TIMER);
+				PORT H2_GPIO_PORT, PIN H2_GPIO_PIN);
 	~HallEncoder();
 	uint8_t GetHallState(int in);
 	void dummy(int a);
@@ -24,36 +23,34 @@ private:
 	PIN H2_GPIO_PIN_;
 
 };
-
+asdfsa
 //////////////////////////////////////////////////////////
 
-template <class PORT, class PIN, class TIMER>
-HallEncoder<PORT,PIN,TIMER>::HallEncoder(PORT H0_GPIO_PORT, PIN H0_GPIO_PIN,
+template <class PORT, class PIN>
+HallEncoder<PORT,PIN>::HallEncoder(PORT H0_GPIO_PORT, PIN H0_GPIO_PIN,
 								   PORT H1_GPIO_PORT, PIN H1_GPIO_PIN,
-								   PORT H2_GPIO_PORT, PIN H2_GPIO_PIN,
-								   TIMER PWM_TIMER ) {
+								   PORT H2_GPIO_PORT, PIN H2_GPIO_PIN) {
 	H0_GPIO_PORT_ = H0_GPIO_PORT;
 	H0_GPIO_PIN_ = H0_GPIO_PIN;
 	H1_GPIO_PORT_ = H1_GPIO_PORT;
 	H1_GPIO_PIN_ = H1_GPIO_PIN;
 	H2_GPIO_PORT_ = H2_GPIO_PORT;
 	H2_GPIO_PIN_ = H2_GPIO_PIN;
-	PWM_TIMER->Init.Period = 20;
 }
 
-template <class PORT, class PIN, class TIMER>
-HallEncoder<PORT,PIN,TIMER>::~HallEncoder() {
+template <class PORT, class PIN>
+HallEncoder<PORT,PIN>::~HallEncoder() {
 }
 
-template <class PORT, class PIN, class TIMER>
-uint8_t HallEncoder<PORT,PIN,TIMER>::GetHallState(int in) {
+template <class PORT, class PIN>
+uint8_t HallEncoder<PORT,PIN>::GetHallState(int in) {
 	uint8_t hall_state = 0;
 
 	return in;
 }
 
-template <class PORT, class PIN, class TIMER>
-void HallEncoder<PORT,PIN,TIMER>::dummy(int a) {
+template <class PORT, class PIN>
+void HallEncoder<PORT,PIN>::dummy(int a) {
 
 }
 
